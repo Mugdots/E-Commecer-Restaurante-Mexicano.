@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Mexicano</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #c0392b, #e74c3c);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        section {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #c0392b;
+            text-align: center;
+        }
+
+        .about-text {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .menu-card h3 {
+            color: #c0392b;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-card .price {
+            font-weight: bold;
+            color: #27ae60;
+            margin-top: 0.5rem;
+        }
+
+        #contact {
+            background: #f9f9f9;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Restaurante Mexicano</h1>
+    <p>Sabores autênticos do México</p>
+</header>
+
+<nav>
+    <a href="#about">Sobre</a>
+    <a href="#menu">Cardápio</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<section id="about">
+    <h2>Sobre Nós</h2>
+    <p class="about-text">
+        Bem-vindo ao Restaurante Mexicano! Oferecemos pratos tradicionais preparados com ingredientes frescos e receitas autênticas. Venha experimentar o melhor da culinária mexicana.
+    </p>
+</section>
+
+<section id="menu">
+    <h2>Cardápio</h2>
+    <div class="menu-grid">
+        <div class="menu-card">
+            <h3>Tacos</h3>
+            <p>Tortilhas de milho com carne, cebola, coentro e molho especial.</p>
+            <p class="price">R$ 28,00</p>
+        </div>
+        <div class="menu-card">
+            <h3>Burrito</h3>
+            <p>Tortilha de trigo recheada com arroz, feijão, carne e guacamole.</p>
+            <p class="price">R$ 34,00</p>
+        </div>
+        <div class="menu-card">
+            <h3>Quesadilla</h3>
+            <p>Tortilha crocante com queijo derretido, frango e pimentões.</p>
+            <p class="price">R$ 30,00</p>
+        </div>
+        <div class="menu-card">
+            <h3>Nachos Supreme</h3>
+            <p>Nachos cobertos com queijo, jalapeños, guacamole e sour cream.</p>
+            <p class="price">R$ 26,00</p>
+        </div>
+        <div class="menu-card">
+            <h3>Enchiladas</h3>
+            <p>Tortilhas recheadas com frango, cobertas com molho de tomate e queijo.</p>
+            <p class="price">R$ 32,00</p>
+        </div>
+        <div class="menu-card">
+            <h3>Guacamole</h3>
+            <p>Abacate fresco com tomate, cebola, coentro e limão. Acompanha nachos.</p>
+            <p class="price">R$ 22,00</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contato</h2>
+    <div class="contact-info">
+        <p>Horário: Terça a Domingo, 11h - 22h</p>
+        <p>Telefone: (27) 9999-0000</p>
+        <p>Endereço: Rua Principal, 123 - Centro</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Restaurante Mexicano. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
